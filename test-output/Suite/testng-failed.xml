@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="properties"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ValidateSaveVersion">
+        <methods>
+          <include name="save"/>
+        </methods>
+      </class> <!-- ValidateSaveVersion -->
+      <class name="Validatepitchcreation4176">
+        <methods>
+          <include name="outline"/>
+        </methods>
+      </class> <!-- Validatepitchcreation4176 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <groups>
+		  <run>
+			  <include name="properties"></include>
+		  </run>
+	  </groups>
+	  <classes>
+       <class name="CustomOrder16889"/>
+       <class name="DiagramProperties4183"/>
+       <class name="DocsToPdf"/>
+       <class name="ImageGrid"/>
+       <class name="InsertedGraphics"/>
+       <class name="InsertingCharts"/>
+       <class name="InsertingCovers"/>
+       <class name="OldDocs"/>
+       <class name="RealTime"/>
+       <class name="SectionBreak"/> 
+       <class name="Stack"/>
+       <class name="ValidateAgenda"/>
+        <class name="ValidateCalendar"/>
+       <class name="Validatedisplay"/>
+       <class name="ValidateLinkOptions"/>
+       <class name="Validatepitchcreation"/>
+       <class name="Validatepitchcreation4176"/>
+       <class name="ValidateQuote"/>
+       <class name="ValidateSaveVersion"/>
+       <class name="WorkspaceOptions"/>
+       <class name="ViewProfile"/>
+ 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

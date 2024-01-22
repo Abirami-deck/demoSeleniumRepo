@@ -1,0 +1,482 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 12 17:55:35 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>673 seconds (673358 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>properties </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ValidateSaveVersion.save()'><b>save</b><br>Test class: ValidateSaveVersion</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //p[contains(text(),&apos;Save version&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.0, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Abirami\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53681/devtoo..., se:cdpVersion: 118.0.5993.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 233b8fad17427c2f5341b796cb97b8f3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at Settings.saveversiondoc(Settings.java:627)
+	at ValidateSaveVersion.save(ValidateSaveVersion.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1926185978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1926185978'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //p[contains(text(),&apos;Save version&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.0, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Abirami\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53681/devtoo..., se:cdpVersion: 118.0.5993.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 233b8fad17427c2f5341b796cb97b8f3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at Settings.saveversiondoc(Settings.java:627)
+	at ValidateSaveVersion.save(ValidateSaveVersion.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>ValidateSaveVersion@607fbe09</td></tr>
+<tr>
+<td title='Validatepitchcreation4176.outline()'><b>outline</b><br>Test class: Validatepitchcreation4176<br/>
+<a href="#Output-290751331" onClick='toggleBox("Output-290751331", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-290751331" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-290751331">
+Clicked on apply style<br/>
+Clicked on deletebtn<br/>
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on usebtn<br/>
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/ul/li[2]/div[2]/button[2] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.0, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Abirami\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53602}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53602/devtoo..., se:cdpVersion: 118.0.5993.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf3389145c4d72a7fd5b61ce9035e168
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at Settings.usebtnbulletlist(Settings.java:1618)
+	at Validatepitchcreation4176.outline(Validatepitchcreation4176.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace290751331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace290751331'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/ul/li[2]/div[2]/button[2] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.0, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Abirami\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53602}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53602/devtoo..., se:cdpVersion: 118.0.5993.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf3389145c4d72a7fd5b61ce9035e168
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at Settings.usebtnbulletlist(Settings.java:1618)
+	at Validatepitchcreation4176.outline(Validatepitchcreation4176.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>56</td>
+<td>Validatepitchcreation4176@7fc6de5b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ImageGrid.grid()'><b>grid</b><br>Test class: ImageGrid<br/>
+<a href="#Output-700356991" onClick='toggleBox("Output-700356991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-700356991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-700356991">
+Selecting a imagegrid documents<br/>
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on stack asset<br/>
+Clicked on floater settings<br/>
+Properties added successfully<br/>
+Text position added<br/>
+Clicked on Hyperlink<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>ImageGrid@62e6b5c8</td></tr>
+<tr>
+<td title='InsertingCovers.sectionbreak()'><b>sectionbreak</b><br>Test class: InsertingCovers<br/>
+<a href="#Output-340418158" onClick='toggleBox("Output-340418158", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-340418158" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-340418158">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on bookend asset<br/>
+Clicked on explore styles<br/>
+Clicked on variation<br/>
+Clicked on floater settings<br/>
+Clicked on deletebtn<br/>
+Clicked on variation<br/>
+Clicked on apply style<br/>
+Clicked on theme palette<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>InsertingCovers@4b20ca2b</td></tr>
+<tr>
+<td title='Validatedisplay.display()'><b>display</b><br>Test class: Validatedisplay<br/>
+<a href="#Output-1419635675" onClick='toggleBox("Output-1419635675", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1419635675" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1419635675">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on variation<br/>
+Clicked on floater settings<br/>
+Floater settings added<br/>
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on deletebtn<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>Validatedisplay@72758afa</td></tr>
+<tr>
+<td title='ValidateAgenda.agendaValidate()'><b>agendaValidate</b><br>Test class: ValidateAgenda<br/>
+<a href="#Output-551849571" onClick='toggleBox("Output-551849571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-551849571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-551849571">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on agenda asset<br/>
+Clicked on insert btn<br/>
+Points added succcessfully<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>ValidateAgenda@2a8d39c4</td></tr>
+<tr>
+<td title='ValidateCalendar.calendarvalidate()'><b>calendarvalidate</b><br>Test class: ValidateCalendar<br/>
+<a href="#Output-1533375298" onClick='toggleBox("Output-1533375298", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1533375298" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1533375298">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on timeline asset<br/>
+Event added successfully<br/>
+Clicked on deletebtn<br/>
+Clicked on present closebtn<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>ValidateCalendar@25b2cfcb</td></tr>
+<tr>
+<td title='Stack.stack()'><b>stack</b><br>Test class: Stack<br/>
+<a href="#Output-1475150566" onClick='toggleBox("Output-1475150566", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1475150566" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1475150566">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on productscreen asset<br/>
+Clicked on usebtn<br/>
+Points added succcessfully<br/>
+Clicked on deletebtn<br/>
+Clicked on apply style<br/>
+Clicked on theme palette<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>70</td>
+<td>Stack@4da602fc</td></tr>
+<tr>
+<td title='ValidateQuote.quote()'><b>quote</b><br>Test class: ValidateQuote<br/>
+<a href="#Output-705735067" onClick='toggleBox("Output-705735067", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-705735067" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-705735067">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on variation<br/>
+Clicked on apply style<br/>
+Clicked on deletebtn<br/>
+Clicked on style option<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>ValidateQuote@21baa903</td></tr>
+<tr>
+<td title='InsertedGraphics.graphics()'><b>graphics</b><br>Test class: InsertedGraphics<br/>
+<a href="#Output-1947060963" onClick='toggleBox("Output-1947060963", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1947060963" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1947060963">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on stack asset<br/>
+Points added succcessfully<br/>
+Clicked on theme palette<br/>
+Clicked on style option<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>InsertedGraphics@3f792b9b</td></tr>
+<tr>
+<td title='ValidateLinkOptions.linkoptions()'><b>linkoptions</b><br>Test class: ValidateLinkOptions<br/>
+<a href="#Output-8781131" onClick='toggleBox("Output-8781131", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8781131" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8781131">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on Hyperlink<br/>
+Clicked on deletebtn<br/>
+Test case passed<br/>
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>ValidateLinkOptions@fb9c7aa</td></tr>
+<tr>
+<td title='Validatepitchcreation.outline()'><b>outline</b><br>Test class: Validatepitchcreation<br/>
+<a href="#Output-427354807" onClick='toggleBox("Output-427354807", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-427354807" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-427354807">
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>Validatepitchcreation@4c398c80</td></tr>
+<tr>
+<td title='RealTime.share()'><b>share</b><br>Test class: RealTime<br/>
+<a href="#Output-382522044" onClick='toggleBox("Output-382522044", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-382522044" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-382522044">
+Mail sent successfully<br/>
+Clicked on sent invitebtn<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>RealTime@6aecbb8d</td></tr>
+<tr>
+<td title='SectionBreak.sectionbreak()'><b>sectionbreak</b><br>Test class: SectionBreak<br/>
+<a href="#Output-982226008" onClick='toggleBox("Output-982226008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-982226008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-982226008">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on floater settings<br/>
+Clicked on apply style<br/>
+Clicked on deletebtn<br/>
+Clicked on theme palette<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>SectionBreak@1af146</td></tr>
+<tr>
+<td title='WorkspaceOptions.workspace()'><b>workspace</b><br>Test class: WorkspaceOptions<br/>
+<a href="#Output-729251844" onClick='toggleBox("Output-729251844", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-729251844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-729251844">
+Clicked on members and groups<br/>
+Clicked on invitemember workspace<br/>
+Clicked on mail workspace<br/>
+Clicked on sent invitebtn<br/>
+Clicked on bacbtn<br/>
+Clicked on selected status<br/>
+Clicked on create folder<br/>
+Clicked on folder name<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>WorkspaceOptions@60a2630a</td></tr>
+<tr>
+<td title='DiagramProperties4183.diagram()'><b>diagram</b><br>Test class: DiagramProperties4183<br/>
+<a href="#Output-1092382020" onClick='toggleBox("Output-1092382020", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1092382020" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1092382020">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Points added succcessfully<br/>
+Clicked on floater settings<br/>
+Floater settings added<br/>
+Clicked on deletebtn<br/>
+Clicked on theme palette<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>DiagramProperties4183@3b7ff809</td></tr>
+<tr>
+<td title='InsertingCharts.charts()'><b>charts</b><br>Test class: InsertingCharts<br/>
+<a href="#Output-416242770" onClick='toggleBox("Output-416242770", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-416242770" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-416242770">
+Clicked on add slide<br/>
+Clicked on browse template<br/>
+Clicked on floater settings<br/>
+Quote properties added<br/>
+Clicked on apply style<br/>
+Test case passed<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>InsertingCharts@7b8233cd</td></tr>
+</table><p>
+</body>
+</html>
